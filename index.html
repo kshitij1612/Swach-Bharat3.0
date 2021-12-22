@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Swachh Bharat</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body class="body_background">
+
+    <center>
+
+        <div class="container" id="container">
+            <div class="form-container sign-up-container sup">
+                <form action="#">
+                    <h1>Create Account</h1>
+                    <p id="noteIm">NOTE : Use [a-z] [A-Z] [0-9] [! @ # $ % ^ & * ( ) ] as user name and password.</p>
+                    <input id="email" type="text" placeholder="Username" />
+                    <br>
+                    <input id="password" type="password" placeholder="Password" />
+                    <br>
+                    <button onclick="signUp()">Sign Up</button>
+                </form>     
+            </div>
+            <div class="form-container sign-in-container sin">
+                <form>
+                    <h1>Sign in</h1>
+                    <input id="emailNEW" type="text" placeholder="Email">
+                    <br>
+                    <input id="passwordNEW" type="password" placeholder="Password">
+                    <br>
+                    <button onclick="signIn()">Sign In</button>
+                </form>
+            </div>
+            <div class="overlay-container ">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p>Already have a account? please login with your personal info</p>
+                        <button class="ghost" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Friend!</h1>
+                        <p>Let's Clean our City.</p>
+                        <button class="ghost" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </center>
+    <script src="main.js"></script>
+    <script src="form.js"></script>
+</body>
+<!--onclick="formsin();"
+onclick="formsup();"-->
+
+</html>
